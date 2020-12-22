@@ -2,8 +2,8 @@ const axios = require('axios');
 let organization = null;
 let organizationName = 'live4conf';
 let api_url = 'https://api.live4conf.com';
-let interface_config_path = './interface_config.js';
-let config_path = './config.js';
+let interface_config_path = '/config/interface_config.js';
+let config_path = '/config/config.js';
 async function init() {
   initializeArgs();
   const organizationResponse = await retrieveOrganization()
